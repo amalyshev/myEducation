@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(hello_world)
+project(task1)
 
-set (source hello.cpp)
+set (source task1.cpp)
 
-add_executable(hello ${source})
+add_executable(task1 ${source})
