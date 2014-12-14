@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(task1)
+project(task2)
 
-set (source task1.cpp)
+set (source task2.cpp)
 
-add_executable(task1 ${source})
+add_executable(task2 ${source})
