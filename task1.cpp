@@ -1,31 +1,38 @@
 #include <iostream>
-int perevod(int age_s);
-void string1(void);
-void string2(void);
+void perevod(int hrs, int mints);
 
 
 int main(void)
 {
 	using namespace std;
-	cout<<"Enter your age in years: ";
-	int age;
-	cin>>age;
-	cout<<"Your age in months is: "<<perevod(age)<<endl;
+	cout<<"Enter the number of hours: ";
+	int hours;
+	cin>>hours;
+	if ((hours<0)||(hours>23))
+	{
+		cout<<"Wrong hours number!"<<endl;
+	}
+	else
+	{
+		cout<<"Enter the number of minutes: ";
+		
+		int minutes;
+		cin>>minutes;
+		if((minutes<0)||(minutes>59))
+		{
+			cout<<"Wrong minutes number!"<<endl;
+		}
+		else
+		{
+			perevod(hours,minutes);
+		}
+	}
 	return 0;
 }
 
-int perevod(int age_s)
+void perevod(int hrs,int mints)
 {
-	return age_s*12;
+	std::cout<<hrs<<":"<<mints<<std::endl;
+	return;
 }
 
-void string1(void)
-{
-	using namespace std;
-	cout<<"Three blind mice"<<endl;
-}
-void string2(void)
-{
-	using namespace std;
-	cout<<"See how they run"<<endl;
-}
